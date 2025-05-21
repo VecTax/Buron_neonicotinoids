@@ -1,0 +1,31 @@
+Variables explanation of "data_Buron.xlsx"
+
+ [1] "Site"               "ID_zone"            "ID"                 "sampling_year"      "crop_2015"         
+ [6] "crop_2016"          "crop_2017"          "crop_2018"          "crop_2019"          "crop_2020"         
+[11] "crop_2021"          "crop_2022"          "crop_2023"          "crop_2024"          "beet_occurrence"   
+[16] "beet_year"          "beetveg_occurrence" "beetveg_year"       "Acetamiprid"        "Clothianidin"      
+[21] "Flupyradifurone"    "Imidacloprid"       "Sulfoxaflor"        "Thiacloprid"        "Thiamethoxam"      
+[26] "runoff_clo1"        "runoff_clo2"        "runoff_clo3"        "runoff_imid1"       "runoff_imid2"      
+[31] "runoff_imid3"       "dust_clo1"          "dust_clo2"          "dust_clo3"          "dust_imid1"        
+[36] "dust_imid2"         "dust_imid3" 
+
+ID_zone = Plot ID
+ID = Sample ID
+crop_XXX = type of crop at year XXX
+beet_year = number of years between sampling_year and last sugar beet cultivation
+beetveg_year = number of years between sampling_year and last sugar beet cultivation OR last vegetable cultivation
+beet_occurrence = number of sugar beet cultivations since 2015
+beetveg_occurrence = number of sugar beet OR vegetable cultivations since 2015
+runoff_clo1 = area of intersection of sugar beets crops with the watershed zone one year prior (see Supplementary material Buron et al.)
+runoff_clo2 = area of intersection of sugar beets crops with the watershed zone two years prior (see Supplementary material Buron et al.)
+runoff_clo3 = area of intersection of sugar beets crops with the watershed zone two years prior (see Supplementary material Buron et al.)
+dust_clo1 = area of intersection of sugar beets crops with the proximity buffer one year prior (see Supplementary material Buron et al.)
+dust_clo2 = area of intersection of sugar beets crops with the proximity buffer two years prior (see Supplementary material Buron et al.)
+dust_clo3 = area of intersection of sugar beets crops with the proximity buffer three years prior (see Supplementary material Buron et al.)
+
+runoff_imi1 = area of intersection of sugar beets OR vegetables crops with the watershed zone one year prior (see Supplementary material Buron et al.)
+runoff_imi2 = area of intersection of sugar beets OR vegetables crops with the watershed zone two years prior (see Supplementary material Buron et al.)
+runoff_imi3 = area of intersection of sugar beets OR vegetables crops with the watershed zone two years prior (see Supplementary material Buron et al.)
+dust_imi1 = area of intersection of sugar beets OR vegetables crops with the proximity buffer one year prior (see Supplementary material Buron et al.)
+dust_imi2 = area of intersection of sugar beets OR vegetables crops with the proximity buffer two years prior (see Supplementary material Buron et al.)
+dust_imi3 = area of intersection of sugar beets OR vegetables crops with the proximity buffer three years prior (see Supplementary material Buron et al.)
