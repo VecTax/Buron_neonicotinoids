@@ -31,19 +31,12 @@ mod2 = glmmTMB::glmmTMB(Imidacloprid ~ log(beetveg_year+1) + (1|Site), data = mo
 summary(mod2)
 
 ## Number of treatment 
-data_graph_occ = data %>% 
-  mutate(beet_occurrence = case_when(beet_occurrence == 0 ~ "No\noccurrence", TRUE ~ as.character(beet_occurrence)),
-         beetveg_occurrence = case_when(beetveg_occurrence == 0 ~ "No\noccurrence", TRUE ~ as.character(beetveg_occurrence)))
 
-mod3 = lmer(Clothianidin ~ beet_occurrence + (1|Site), data = data_graph_occ %>% 
-                         filter(beet_occurrence != "No\noccurrence") %>% 
-                         mutate(beet_occurrence = as.numeric(beet_occurrence))) 
+mod3 = lmer(Clothianidin ~ beet_occurrence + (1|Site), data = data) 
 
 summary(mod3)
 
-mod4 = lmer(Imidacloprid ~ beetveg_occurrence + (1|Site), data = data_graph_occ %>% 
-                         filter(beetveg_occurrence != "No\noccurrence") %>% 
-                         mutate(beetveg_occurrence = as.numeric(beetveg_occurrence)))
+mod4 = lmer(Imidacloprid ~ beetveg_occurrence + (1|Site), data = data)
 
 summary(mod4)
 
@@ -92,4 +85,5 @@ m23 = glmmTMB::glmmTMB(any_imid ~ scale(dust_imid3) + scale(runoff_imid3) + (1 |
                          mutate(any_imid = if_else(Imidacloprid > 0, 1, 0)) %>% 
                          filter(beetveg_occurrence == 0), family = "binomial") 
 DHARMa::testDispersion(m23)
+
 summary(m23)
