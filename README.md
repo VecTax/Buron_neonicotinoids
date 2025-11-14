@@ -1,4 +1,4 @@
-## Code used for Buron et al. (2025) - Ubiquitous and unexpected neonicotinoid contaminations in agricultural soils: investigating the role of cropping history and spatial transport
+## Code used for Buron et al. (2025) - Predicting soil neonicotinoid content in agricultural landscapes using indirect indicators
 
 - *data_Buron.xlsx* --> dataset used for analysis
 - *variables_explanation.txt* --> Description of variables used in data_Buron.xlsx
